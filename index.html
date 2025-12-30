@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Web Dream Store - E-Commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>🛍️ Digital Web Dream Store</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#cart-section">Cart</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="cart-toggle" id="cartToggle">
+                🛒 Cart <span class="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Home Section -->
+        <section class="hero" id="home">
+            <h2>Welcome to Digital Web Dream Store</h2>
+            <p>Discover the latest in technology and gadgets</p>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section" id="products">
+            <h2>Featured Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section class="cart-section" id="cart-section">
+            <div class="cart-container">
+                <h2>Shopping Cart</h2>
+                <div class="cart-content" id="cartContent">
+                    <div class="empty-cart-message" id="emptyCartMessage">
+                        <p>Your cart is empty. Start shopping!</p>
+                    </div>
+                    <div class="cart-items" id="cartItems">
+                        <!-- Cart items will be dynamically inserted here -->
+                    </div>
+                </div>
+                <div class="cart-summary" id="cartSummary" style="display: none;">
+                    <hr>
+                    <div class="cart-total">
+                        <span>Grand Total:</span>
+                        <span id="grandTotal">$0.00</span>
+                    </div>
+                    <button class="btn btn-danger" id="clearCartBtn">Clear Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <h2>Get in Touch</h2>
+                <p>Have questions? We'd love to hear from you!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p>support@digitalwebdreamstore.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📱 Phone</h3>
+                        <p>+92 (123) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📍 Address</h3>
+                        <p>123 Tech Boulevard, Innovation City, IC 12345</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Digital Web Dream Store. All rights reserved.</p>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
